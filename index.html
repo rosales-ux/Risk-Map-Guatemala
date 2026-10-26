@@ -1,0 +1,601 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Atlas de Riesgo Guatemala</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style>
+<style>
+/* Layout: lámina técnica RV — mapa dominante, panel de calificación a la derecha, ranking y método debajo */
+:root{
+  --ink:#101820; --slate:#43535E; --mute:#7C8A93; --rule:#DCE1E4; --rule2:#EDF0F1; --panel:#F3F2EE; --bg:#FBFBF9;
+  --steel:#1B3A5C; --mid:#3E6B8C; --brick:#8E3B2B; --ochre:#A0761E; --olive:#4C6B3D; --map-bg:#CED6DB;
+  --f-cond:"IBM Plex Sans Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-serif:"Source Serif 4",Charter,Georgia,serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#E7EBEE; --slate:#B3BEC6; --mute:#8794A0; --rule:#2C3640; --rule2:#222B33; --panel:#18212A; --bg:#11171D;
+  --steel:#8FB3D6; --mid:#6E9BBF; --brick:#D88A72; --ochre:#D5AE5C; --olive:#9CBB86; --map-bg:#1C252D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#E7EBEE; --slate:#B3BEC6; --mute:#8794A0; --rule:#2C3640; --rule2:#222B33; --panel:#18212A; --bg:#11171D;
+  --steel:#8FB3D6; --mid:#6E9BBF; --brick:#D88A72; --ochre:#D5AE5C; --olive:#9CBB86; --map-bg:#1C252D; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-serif);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1400px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px;display:grid;gap:28px}
+.lbl{font-family:var(--f-cond);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.num{font-family:var(--f-cond);font-variant-numeric:tabular-nums}
+header{border-bottom:3px solid var(--ink);padding-bottom:12px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:flex-end;justify-content:space-between}
+header h1{font-family:var(--f-cond);font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.05;margin:4px 0 0;letter-spacing:-.01em;text-wrap:balance}
+header p{margin:6px 0 0;color:var(--slate);max-width:64ch}
+.meta{display:grid;grid-template-columns:auto auto;gap:2px 14px;font-family:var(--f-cond);font-size:12px;color:var(--slate)}
+.meta b{font-weight:600;color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-bottom:1px solid var(--rule)}
+.kpi{padding:10px 18px 14px 0;display:grid;gap:2px}
+.kpi+.kpi{padding-left:18px;border-left:1px solid var(--rule)}
+.kpi .v{font-family:var(--f-cond);font-size:30px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi .s{font-family:var(--f-cond);font-size:12px;color:var(--slate)}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 340px;border:1px solid var(--rule)}
+#map{height:min(84vh,860px);min-height:460px;background:var(--map-bg)}
+.side{border-left:1px solid var(--rule);background:var(--panel);display:grid;align-content:start;min-width:0;max-height:min(84vh,860px);overflow-y:auto}
+.side section{padding:14px 16px;border-bottom:1px solid var(--rule);display:grid;gap:8px}
+.lyr{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;font-family:var(--f-cond);font-size:14px;cursor:pointer}
+.lyr input{margin:0;accent-color:var(--steel);width:15px;height:15px}
+.lyr small{color:var(--mute);font-size:11px}
+.ramp{display:flex;height:8px;margin:2px 0 0 26px}.ramp i{flex:1}
+.ramp-l{display:flex;justify-content:space-between;margin-left:26px;font-family:var(--f-cond);font-size:10px;color:var(--mute);letter-spacing:.06em}
+.opac{display:flex;gap:8px;align-items:center;font-family:var(--f-cond);font-size:12px;color:var(--slate)}
+.opac input{flex:1;accent-color:var(--steel)}
+.hint{font-family:var(--f-cond);font-size:12px;color:var(--mute)}
+.pill{font-family:var(--f-cond);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:1px 7px;border:1px solid currentColor}
+.c0{color:var(--mute)} .c1{color:var(--olive)} .c2{color:var(--ochre)} .c3{color:var(--brick)} .c4{color:var(--brick);background:color-mix(in srgb,var(--brick) 14%,transparent)}
+.qform{display:grid;grid-template-columns:minmax(0,1fr) auto}
+.qform input{font-family:var(--f-cond);font-size:14px;padding:7px 9px;border:1px solid var(--slate);border-right:0;background:var(--bg);color:var(--ink);min-width:0;font-variant-numeric:tabular-nums}
+.qform button,.btn{font-family:var(--f-cond);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--steel);background:var(--steel);color:var(--bg);cursor:pointer;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--steel)}
+.grade{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;padding:10px 0 8px;border-bottom:1.5px solid var(--ink)}
+.grade .g{grid-row:span 2;font-family:var(--f-cond);font-weight:700;font-size:44px;line-height:1;width:58px;height:58px;display:grid;place-items:center;color:#fff}
+.grade .gl{font-family:var(--f-cond);font-size:18px;font-weight:600;line-height:1.1}
+.grade .gs{font-family:var(--f-cond);font-size:12px;color:var(--slate)}
+.hz{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:6px 0;border-bottom:1px solid var(--rule2);font-family:var(--f-cond);font-size:13px}
+.hz .track{grid-column:1/-1;height:5px;background:var(--rule2)}.hz .track i{display:block;height:100%}
+.hz small{grid-column:1/-1;color:var(--mute);font-size:11.5px}
+.acts{display:flex;flex-wrap:wrap;gap:6px;padding-top:10px}
+.err{font-family:var(--f-cond);font-size:12.5px;color:var(--brick)}
+.vleg{display:grid;gap:4px;font-family:var(--f-cond);font-size:12.5px;color:var(--slate)}
+.vleg span{display:flex;gap:8px;align-items:center}
+h2{font-family:var(--f-cond);font-size:20px;font-weight:600;margin:0;padding-bottom:6px;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h2 span{font-weight:400;font-size:12px;color:var(--mute);letter-spacing:.04em}
+.grid2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:32px}
+.tabs{display:flex;gap:0;flex-wrap:wrap;align-items:center}
+.tabs button{font-family:var(--f-cond);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--slate);background:transparent;color:var(--slate);cursor:pointer}
+.tabs button+button{border-left:0}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabs input{margin-left:auto;font-family:var(--f-cond);font-size:13px;padding:5px 8px;border:1px solid var(--rule);background:var(--bg);color:var(--ink);min-width:0;width:200px}
+.tbl{overflow:auto;max-height:560px;border-bottom:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;font-family:var(--f-cond);font-size:13.5px;font-variant-numeric:tabular-nums}
+th{position:sticky;top:0;background:var(--bg);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:600;text-align:right;padding:8px 8px 6px;border-bottom:1.5px solid var(--ink);cursor:pointer;white-space:nowrap;user-select:none}
+th:first-child,td:first-child{text-align:left;padding-left:0}
+th[aria-sort]::after{content:" ▾";color:var(--ink)}
+td{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:right}
+td.sub{color:var(--mute);text-align:left}
+tr.sel td{background:var(--panel)}
+tbody tr{cursor:pointer}
+.bar{display:inline-block;height:7px;vertical-align:middle;margin-left:6px;background:var(--mid)}
+.idx{display:inline-grid;place-items:center;min-width:38px;padding:1px 6px;font-weight:600;color:#fff}
+.prose{font-size:15px;max-width:68ch}.prose p{margin:0 0 10px}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px 32px}
+.method h3{font-family:var(--f-cond);font-size:15px;margin:0 0 4px;font-weight:600;display:flex;gap:8px;align-items:center}
+.method h3 i{width:10px;height:10px;display:inline-block}
+.method p{margin:0 0 6px;font-size:14px;color:var(--slate)}
+.src{font-family:var(--f-cond);font-size:12px;color:var(--slate);display:grid;gap:3px}
+.src a{color:var(--mid)}
+footer{border-top:1px solid var(--rule);padding-top:8px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:var(--f-cond);font-size:11px;color:var(--mute);letter-spacing:.06em}
+#loading{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-cond);font-size:13px;color:var(--slate);letter-spacing:.1em;text-transform:uppercase;z-index:800;pointer-events:none}
+.leaflet-container{font-family:var(--f-cond);background:var(--map-bg)}
+.leaflet-tooltip.mlab,.leaflet-tooltip.dlab{background:transparent;border:0;box-shadow:none;font-family:var(--f-cond);color:#101820;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 2px #fff}
+.leaflet-tooltip.mlab{font-size:10.5px;font-weight:500;letter-spacing:.04em}
+.leaflet-tooltip.dlab{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.leaflet-tooltip.mlab::before,.leaflet-tooltip.dlab::before{display:none}
+.vtag{font-family:var(--f-cond);font-size:10.5px;font-weight:700;color:#5a1a10;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff;letter-spacing:.04em}
+.vtag b{font-size:13px;color:#8E3B2B}.vtag.C b{color:#A0761E;font-size:11px}
+.leaflet-control-zoom a{color:#101820}
+@media (max-width:900px){.stage{grid-template-columns:1fr}.side{border-left:0;border-top:1px solid var(--rule);max-height:none}.grid2{grid-template-columns:1fr}#map{height:64vh}.tabs input{margin-left:0;width:100%;margin-top:6px}}
+:focus-visible{outline:2px solid var(--mid);outline-offset:2px}
+</style>
+<style>
+/* Selector de zona, máscara de foco, puntos guardados e informe imprimible */
+.picker{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto auto;gap:10px;align-items:end;padding:14px 16px;background:var(--panel);border:1px solid var(--rule)}
+.picker label{display:grid;gap:4px;min-width:0}
+.picker select{font-family:var(--f-cond);font-size:15px;padding:8px 10px;border:1px solid var(--slate);background:var(--bg);color:var(--ink);min-width:0;width:100%}
+.picker .btn{padding:10px 16px;font-size:12.5px;justify-content:center}
+.crumb{font-family:var(--f-cond);font-size:13px;color:var(--slate);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.crumb a{color:var(--mid);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.crumb b{color:var(--ink)}
+.kpi .v small{font-size:14px;color:var(--mute);font-weight:500;margin-left:4px}
+.res{font-family:var(--f-cond);font-size:11px;color:var(--mute);letter-spacing:.06em}
+.saved{display:grid;gap:0}
+.saved .it{display:grid;grid-template-columns:22px 26px 1fr auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--rule2);font-family:var(--f-cond);font-size:12.5px}
+.saved .it .n{font-weight:700;color:var(--slate)}
+.saved .it .gg{display:grid;place-items:center;width:24px;height:24px;color:#fff;font-weight:700}
+.saved .it button{border:0;background:transparent;color:var(--mute);cursor:pointer;font-size:15px;padding:2px 4px}
+.pnum{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#101820;color:#fff;font:700 11px/1 "IBM Plex Sans Condensed",Arial,sans-serif;border:1.5px solid #fff}
+/* Informe */
+#informe{border:1px solid var(--rule);background:var(--bg)}
+.rep-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:1px solid var(--rule);background:var(--panel)}
+.sheet{max-width:1040px;margin:0 auto;padding:28px max(16px,3vw) 36px;display:grid;gap:22px}
+.sheet h3{font-family:var(--f-cond);font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px;padding-bottom:5px;border-bottom:1.5px solid var(--ink);color:var(--ink)}
+.rep-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:end;border-bottom:3px solid var(--ink);padding-bottom:12px}
+.rep-head h2{border:0;padding:0;font-size:clamp(24px,3.4vw,34px);font-weight:700;display:block;line-height:1.05}
+.rep-head .gbig{display:grid;grid-template-columns:auto auto;gap:2px 12px;align-items:center}
+.rep-head .gbig .g{grid-row:span 2;width:64px;height:64px;display:grid;place-items:center;color:#fff;font:700 46px/1 var(--f-cond)}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.figs figure{margin:0;display:grid;gap:4px;min-width:0}
+.figs canvas{width:100%;height:auto;border:1px solid var(--rule);background:var(--map-bg)}
+.figs figcaption{font-family:var(--f-cond);font-size:12px;color:var(--slate)}
+.dist{display:grid;gap:10px}
+.dist .row{display:grid;grid-template-columns:130px minmax(0,1fr) 120px;gap:12px;align-items:center;font-family:var(--f-cond);font-size:13px}
+.dist .bar2{display:flex;height:16px;background:var(--rule2)}
+.dist .bar2 i{display:block;height:100%}
+.dist .lg{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--f-cond);font-size:11px;color:var(--mute);margin-left:142px}
+.dist .lg span{display:flex;gap:5px;align-items:center}.dist .lg i{width:10px;height:10px;display:inline-block}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.sheet table{font-size:13px}
+.sheet th{position:static;cursor:default}
+.sheet .prose{max-width:none}
+.sheet .note{font-family:var(--f-cond);font-size:11.5px;color:var(--mute);line-height:1.45}
+@media (max-width:900px){.picker{grid-template-columns:1fr 1fr}.figs{grid-template-columns:1fr}.two{grid-template-columns:1fr}.dist .row{grid-template-columns:100px minmax(0,1fr)}.dist .row span:last-child{display:none}.dist .lg{margin-left:0}.rep-head{grid-template-columns:1fr}}
+@media print{
+  @page{size:letter;margin:12mm}
+  body{background:#fff}
+  .wrap>*:not(#informe){display:none!important}
+  #informe{border:0}.rep-bar{display:none!important}
+  .sheet{padding:0;max-width:none}
+  .figs canvas{border:1px solid #ccc}
+  .sheet section{break-inside:avoid}
+}
+</style>
+
+<div class="wrap">
+<header>
+  <div>
+    <div class="lbl">Atlas de amenazas naturales · Guatemala · Fase 3</div>
+    <h1>Guatemala: inundación, actividad volcánica e incendios</h1>
+    <p>Elige un departamento y un municipio para ver sus amenazas a 74 m por píxel, calificar terrenos y generar un informe de la zona.</p>
+  </div>
+  <div class="meta">
+    <span>Versión</span><b>0.4 · preliminar</b>
+    <span>Fecha</span><b>24 oct 2026</b>
+    <span>Resolución</span><b class="num">74 m depto. · 148 m país</b>
+    <span>Cobertura</span><b>22 departamentos · 340 municipios</b>
+  </div>
+</header>
+
+<form class="picker" id="picker" autocomplete="off">
+  <label><span class="lbl">Departamento</span><select id="selDep"><option value="">Todo el país</option></select></label>
+  <label><span class="lbl">Municipio</span><select id="selMun" disabled><option value="">Todo el departamento</option></select></label>
+  <button class="btn" type="submit">Ver mapa</button>
+  <button class="btn ghost" type="button" id="btnRep">Generar informe</button>
+</form>
+<div class="crumb" id="crumb"></div>
+
+<div class="kpis" id="kpis"></div>
+
+<div class="stage">
+  <div style="position:relative;min-width:0"><div id="map" role="application" aria-label="Mapa de amenazas"></div><div id="loading">Cargando capas…</div></div>
+  <aside class="side">
+    <section>
+      <div class="lbl">Calificar un punto</div>
+      <form id="qform" class="qform" autocomplete="off">
+        <input id="qin" type="text" placeholder="14.6349, -90.5069" aria-label="Coordenadas latitud, longitud">
+        <button type="submit">Calificar</button>
+      </form>
+      <div class="hint">Pega coordenadas o un enlace de Google Maps, o haz clic en el mapa. El pin se puede arrastrar.</div>
+      <div id="probe"></div>
+    </section>
+    <section id="savedSec">
+      <div class="lbl">Puntos para el informe</div>
+      <div class="saved" id="saved"></div>
+    </section>
+    <section>
+      <div class="lbl">Capas</div>
+      <label class="lyr"><input type="checkbox" id="l-flood" checked><span>Inundación</span><small>HAND + costa + lagos</small></label>
+      <div class="ramp"><i style="background:#B9D0E2"></i><i style="background:#78A5C8"></i><i style="background:#3E6B8C"></i><i style="background:#1B3A5C"></i></div>
+      <div class="ramp-l"><span>Baja</span><span>Media</span><span>Alta</span><span>Muy alta</span></div>
+      <label class="lyr"><input type="checkbox" id="l-volc" checked><span>Volcánica</span><small>Proximal + lahares</small></label>
+      <div class="ramp"><i style="background:#D6BE8C"></i><i style="background:#C49646"></i><i style="background:#AA5A32"></i><i style="background:#78261C"></i></div>
+      <div class="ramp-l"><span>Baja</span><span>Media</span><span>Alta</span><span>Muy alta</span></div>
+      <label class="lyr"><input type="checkbox" id="l-fire"><span>Incendios / quemas</span><small>Densidad de focos</small></label>
+      <div class="ramp"><i style="background:#ECD6A0"></i><i style="background:#DEAA5A"></i><i style="background:#C8732D"></i><i style="background:#963719"></i></div>
+      <div class="ramp-l"><span>Baja</span><span>Media</span><span>Alta</span><span>Muy alta</span></div>
+      <label class="lyr"><input type="checkbox" id="l-riv" checked><span>Ríos y cauces de lahar</span><small>&gt; 60 km² cuenca</small></label>
+      <label class="lyr"><input type="checkbox" id="l-mun" checked><span>Límites</span><small>Deptos. y municipios</small></label>
+      <label class="lyr" id="osm-row" hidden><input type="checkbox" id="l-osm"><span>Calles (OpenStreetMap)</span><small>En línea</small></label>
+      <div class="opac"><span>Opacidad</span><input type="range" id="opac" min="20" max="100" value="85" aria-label="Opacidad de capas"><span class="num" id="opac-v">85%</span></div>
+    </section>
+    <section>
+      <div class="lbl">Volcanes</div>
+      <div class="vleg">
+        <span><b style="color:#8E3B2B">▲</b> Muy activo: Fuego, Santiaguito · 6/10/15 km + lahares</span>
+        <span><b style="color:#8E3B2B">▲</b> Activo: Pacaya · 3/5/8 km</span>
+        <span><b style="color:#A0761E">△</b> Histórico o potencial · 2.5/4/6 km</span>
+      </div>
+    </section>
+  </aside>
+</div>
+
+<div id="informe" hidden>
+  <div class="rep-bar">
+    <span class="lbl">Informe generado en esta página</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+      <button type="button" class="btn" id="btnPrint" hidden>Imprimir o guardar PDF</button>
+      <button type="button" class="btn ghost" id="btnCopy">Copiar resumen</button>
+      <button type="button" class="btn ghost" id="btnClose">Cerrar informe</button>
+    </div>
+  </div>
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<div class="grid2">
+  <div style="display:grid;gap:12px;min-width:0;align-content:start">
+    <h2>Exposición territorial <span>Clic en encabezado para ordenar · clic en fila para seleccionar</span></h2>
+    <div class="tabs">
+      <button type="button" id="t-dep" aria-pressed="true">Departamentos</button>
+      <button type="button" id="t-mun" aria-pressed="false">Municipios</button>
+      <input id="tfilter" type="search" placeholder="Buscar…" aria-label="Filtrar tabla">
+    </div>
+    <div class="tbl"><table id="tbl"><thead><tr></tr></thead><tbody></tbody></table></div>
+    <div class="hint">Índice compuesto preliminar 0–100 = 45% inundación + 35% volcánica + 20% focos de calor, cada uno normalizado contra la unidad más expuesta del país en su nivel. Porcentajes = área en clase alta o muy alta.</div>
+  </div>
+  <div style="display:grid;gap:12px;align-content:start;min-width:0">
+    <h2>Estacionalidad de focos <span>MODIS 2020–2025 · Guatemala</span></h2>
+    <svg id="months" viewBox="0 0 420 210" role="img" aria-label="Focos de calor por mes"></svg>
+    <div class="prose"><p id="fire-note"></p></div>
+  </div>
+</div>
+
+<div style="display:grid;gap:14px">
+  <h2>Método <span>Cómo se construyó cada capa y la calificación</span></h2>
+  <div class="method">
+    <div><h3><i style="background:#3E6B8C"></i>Inundación</h3>
+      <p>DEM a 74 m rellenado (priority-flood), flujo D8 y área acumulada para todo el país. Altura sobre el cauce más cercano aguas abajo (HAND), respecto de ríos con cuenca &gt; 40 km². Clases: muy alta &lt; 1.2 m; alta &lt; 2.5 m; media &lt; 4 m; baja &lt; 7 m, con pendiente &lt; 6°.</p>
+      <p>Se suma la costa bajo 6 m a menos de 4 km del mar (alta) y orillas de lagos a menos de 400 m (media). Las depresiones cerradas del karst se limitan a clase media.</p></div>
+    <div><h3><i style="background:#8E3B2B"></i>Actividad volcánica</h3>
+      <p>Trece volcanes en tres grupos. Fuego y Santiaguito: zonas de 6/10/15 km y corredores de lahar hasta 45 km por los cauces que nacen en sus flancos. Pacaya: 3/5/8 km y lahares hasta 15 km. Tacaná, Tajumulco, Santa María, Cerro Quemado, Atitlán, Tolimán, San Pedro, Acatenango, Agua y Tecuamburro: 2.5/4/6 km y cauces de 20 km en clase baja.</p></div>
+    <div><h3><i style="background:#C8732D"></i>Incendios y quemas</h3>
+      <p>Focos MODIS (NASA FIRMS) 2020–2025, confianza ≥ 30%, solo vegetación. Núcleo gaussiano de 2.5 km, en focos/km²·año; clases por percentiles 40/65/85/95 del país.</p></div>
+    <div><h3><i style="background:#1B3A5C"></i>Calificación de un punto</h3>
+      <p>Cada amenaza vale su clase × 25 (0–100) y sube medio nivel si a menos de ~1.6 píxeles hay una clase mayor. La amenaza dominante define la nota y las otras dos suman 25%; quemas pesan 50%. A &lt; 20 · B &lt; 40 · C &lt; 60 · D &lt; 80 · E ≥ 80. Dentro del departamento elegido se usa la capa de 74 m.</p></div>
+    <div><h3><i style="background:#7C8A93"></i>Límites del modelo</h3>
+      <p>Susceptibilidad, no probabilidad ni período de retorno. DEM global (SRTM) con error vertical de ±5 m; sobreestima en bosque y caña. No incluye deslizamientos ni sismo. No sustituye los mapas de CONRED, INSIVUMEH o SIG-MAGA ni un estudio de sitio.</p></div>
+  </div>
+  <div class="src">
+    <span class="lbl" style="margin-top:6px">Fuentes</span>
+    <span>Elevación: AWS Terrain Tiles (SRTM, GMTED) · <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">registry.opendata.aws/terrain-tiles</a></span>
+    <span>Focos de calor: NASA FIRMS, MODIS C6.1, 2020–2025 · <a href="https://firms.modaps.eosdis.nasa.gov/country/" target="_blank" rel="noopener">firms.modaps.eosdis.nasa.gov</a></span>
+    <span>Límites: geoBoundaries GTM ADM1 / ADM2 · <a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoboundaries.org</a></span>
+    <span>Volcanes: Global Volcanism Program, Smithsonian · <a href="https://volcano.si.edu" target="_blank" rel="noopener">volcano.si.edu</a></span>
+  </div>
+</div>
+<footer><span>Atlas de amenazas naturales · Guatemala · v0.4</span><span>Modelo preliminar — no constituye dictamen técnico</span></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(async()=>{
+const D=await (await fetch('datos.json')).json();
+const S=D.summary, P=S.pais, LV=['—','Baja','Media','Alta','Muy alta'];
+const $=id=>document.getElementById(id);
+const fmt=(n,d=1)=>Number(n).toLocaleString('es-GT',{minimumFractionDigits:d,maximumFractionDigits:d});
+const DEP={},MUN={};D.dep.forEach(d=>DEP[d.id]=d);D.mun.forEach(m=>MUN[m.id]=m);
+const GD={},GM={};D.geoDep.features.forEach(f=>GD[f.properties.id]=f);D.geoMun.features.forEach(f=>GM[f.properties.id]=f);
+const GR=[[20,'A','Muy bajo','#4C6B3D'],[40,'B','Bajo','#6E8B4E'],[60,'C','Moderado','#A0761E'],[80,'D','Alto','#B0552F'],[101,'E','Muy alto','#8E3B2B']];
+const grade=s=>GR.find(r=>s<r[0]);
+const idxColor=v=>v>=50?'var(--brick)':v>=30?'var(--ochre)':'var(--olive)';
+
+// Índices y rankings
+function addIdx(rows){const mx={flood:Math.max(...rows.map(s=>s.flood))||1,volc:Math.max(...rows.map(s=>s.volc))||1,fire:Math.max(...rows.map(s=>s.fire))||1};
+  rows.forEach(s=>s.idx=Math.round(100*(.45*s.flood/mx.flood+.35*s.volc/mx.volc+.2*s.fire/mx.fire)));
+  [...rows].sort((a,b)=>b.idx-a.idx).forEach((r,i)=>r.rk=i+1);return mx;}
+const MX={dep:addIdx(D.dep),mun:addIdx(D.mun)};
+D.mun.forEach(m=>{m.d=DEP[m.dep]?DEP[m.dep].n:'';});
+D.dep.forEach(d=>{[...D.mun.filter(m=>m.dep===d.id)].sort((a,b)=>b.idx-a.idx).forEach((m,i,a)=>{m.rkd=i+1;m.nd=a.length;});});
+const NAT={n:'Guatemala',km2:D.dep.reduce((a,d)=>a+d.km2,0),flood:S.flood,volc:S.volc,fires:S.nfire};NAT.fire=NAT.fires/NAT.km2/6;
+
+// Selector
+const sortN=(a,b)=>a.n.localeCompare(b.n,'es');
+$('selDep').innerHTML+= [...D.dep].sort(sortN).map(d=>`<option value="${d.id}">${d.n}</option>`).join('');
+function fillMun(did){const s=$('selMun');s.innerHTML='<option value="">Todo el departamento</option>'+(did?D.mun.filter(m=>m.dep===+did).sort(sortN).map(m=>`<option value="${m.id}">${m.n}</option>`).join(''):'');s.disabled=!did;}
+$('selDep').addEventListener('change',e=>fillMun(e.target.value));
+let sel={dep:null,mun:null};
+
+// Mapa
+const map=L.map('map',{minZoom:7,maxZoom:15,zoomSnap:.5});
+const PB=L.latLngBounds(P.bounds);
+map.fitBounds([[13.74,-92.23],[17.82,-88.22]]);map.setMaxBounds(PB.pad(.05));
+map.attributionControl.setPrefix('').addAttribution('DEM: AWS Terrain Tiles · Focos: NASA FIRMS · Límites: geoBoundaries');
+map.createPane('vec');map.getPane('vec').style.zIndex=450;
+map.createPane('mask');map.getPane('mask').style.zIndex=420;
+const KEYS=['flood','volc','fire','riv'],FILES={flood:'inundacion.png',volc:'volcanica.png',fire:'incendios.png',riv:'rios.png'},ZI={flood:3,fire:4,volc:5,riv:6};
+function layerSet(dir,bounds,z0){const B=L.latLngBounds(bounds);const o={base:L.imageOverlay(`capas/${dir}/base.jpg`,B,{zIndex:z0})};
+  KEYS.forEach(k=>o[k]=L.imageOverlay(`capas/${dir}/${FILES[k]}`,B,{zIndex:z0+ZI[k],opacity:k==='riv'?.9:$('opac').value/100}));return o;}
+const paisL=layerSet('pais',P.bounds,1);
+paisL.base.addTo(map).on('load',()=>$('loading').hidden=true);
+let depL=null;
+function syncLayers(){
+  const on=k=>$({flood:'l-flood',volc:'l-volc',fire:'l-fire',riv:'l-riv'}[k]).checked;
+  KEYS.forEach(k=>{(!depL&&on(k))?paisL[k].addTo(map):paisL[k].remove();if(depL)on(k)?depL[k].addTo(map):depL[k].remove();});
+  if($('l-mun').checked){depLines.addTo(map);map.getZoom()>=9.5?munLines.addTo(map):munLines.remove();}else{depLines.remove();munLines.remove();}
+  const z=map.getZoom();document.querySelectorAll('.dlab').forEach(e=>e.style.display=z<9.5?'':'none');
+}
+const depLines=L.geoJSON(D.geoDep,{pane:'vec',style:{color:'#101820',weight:1.6,fill:false},interactive:false,
+  onEachFeature:(f,l)=>l.bindTooltip(DEP[f.properties.id].n,{permanent:true,direction:'center',className:'dlab'})});
+const munLines=L.geoJSON({type:'FeatureCollection',features:D.geoMun.features.filter(f=>MUN[f.properties.id])},{pane:'vec',style:{color:'#101820',weight:.6,opacity:.5,fill:false,dashArray:'2 3'},interactive:false,
+  onEachFeature:(f,l)=>l.bindTooltip(MUN[f.properties.id].n,{permanent:true,direction:'center',className:'mlab'})});
+['l-flood','l-volc','l-fire','l-riv','l-mun'].forEach(id=>$(id).addEventListener('change',syncLayers));
+map.on('zoomend',syncLayers);syncLayers();
+$('opac').addEventListener('input',()=>{const v=$('opac').value/100;['flood','volc','fire'].forEach(k=>{paisL[k].setOpacity(v);if(depL)depL[k].setOpacity(v);});$('opac-v').textContent=$('opac').value+'%';});
+S.volcanoes.forEach(v=>L.marker([v.lat,v.lon],{icon:L.divIcon({className:'',html:`<div class="vtag ${v.t}"><b>${v.t==='C'?'△':'▲'}</b> ${v.n}</div>`,iconSize:[100,16],iconAnchor:[6,9]}),pane:'vec',interactive:false}).addTo(map));
+const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{zIndex:2,opacity:.55,attribution:'© OpenStreetMap'});
+(()=>{const t=new Image();t.onload=()=>$('osm-row').hidden=false;t.src='https://tile.openstreetmap.org/7/45/58.png';})();
+$('l-osm').addEventListener('change',e=>e.target.checked?osm.addTo(map):osm.remove());
+
+// Rasters de consulta
+function loadImg(src){return new Promise((res,rej)=>{const i=new Image();i.onload=()=>res(i);i.onerror=rej;i.src=src;});}
+function toCtx(img){const c=document.createElement('canvas');c.width=img.width;c.height=img.height;const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(img,0,0);return x;}
+const SRC={};
+function source(key){
+  if(SRC[key])return SRC[key];
+  const g=key==='pais'?P:DEP[key].grid,dir=key==='pais'?'pais':DEP[key].s;
+  SRC[key]=Promise.all([loadImg(`capas/${dir}/consulta.png`),loadImg(`capas/${dir}/elevacion.png`)]).then(([a,b])=>({g,q:toCtx(a),e:toCtx(b)}));
+  return SRC[key];
+}
+source('pais');
+
+// Selección de zona
+let maskL=null,hiL=null;
+function worldMask(f){const g=f.geometry;const holes=(g.type==='Polygon'?[g.coordinates]:g.coordinates).map(p=>p[0].map(([x,y])=>[y,x]));
+  return L.polygon([[[-89,-200],[89,-200],[89,200],[-89,200]],...holes],{pane:'mask',stroke:false,fillColor:'#F3F2EE',fillOpacity:.62,interactive:false});}
+function applySel(dep,mun,{fit=true,hash=true}={}){
+  sel={dep:dep||null,mun:mun||null};
+  $('selDep').value=sel.dep||'';fillMun(sel.dep);$('selMun').value=sel.mun||'';
+  if(depL){Object.values(depL).forEach(l=>l.remove());depL=null;}
+  if(maskL){maskL.remove();maskL=null;} if(hiL){hiL.remove();hiL=null;}
+  if(sel.dep){const d=DEP[sel.dep];depL=layerSet(d.s,d.grid.bounds,10);depL.base.addTo(map);source(sel.dep);}
+  const f=sel.mun?GM[sel.mun]:sel.dep?GD[sel.dep]:null;
+  if(f){maskL=worldMask(f).addTo(map);hiL=L.geoJSON(f,{pane:'vec',style:{color:'#8E3B2B',weight:2.6,fill:false},interactive:false}).addTo(map);
+    if(fit)map.fitBounds(hiL.getBounds(),{padding:[24,24]});}
+  else if(fit)map.fitBounds([[13.74,-92.23],[17.82,-88.22]]);
+  syncLayers();renderScope();
+  if(sel.dep&&tableLevel==='dep')setLevel('mun');else drawTable();
+  if(hash){try{history.replaceState(null,'',sel.dep?`#${DEP[sel.dep].s}${sel.mun?'.m'+sel.mun:''}`:location.pathname+location.search);}catch(e){}}
+}
+$('picker').addEventListener('submit',e=>{e.preventDefault();applySel(+$('selDep').value||null,+$('selMun').value||null);$('map').scrollIntoView({behavior:'smooth',block:'start'});});
+
+function scopeObj(){return sel.mun?MUN[sel.mun]:sel.dep?DEP[sel.dep]:NAT;}
+function renderScope(){
+  const o=scopeObj();
+  const crumb=[`<a data-go="">Guatemala</a>`];
+  if(sel.dep)crumb.push('›',sel.mun?`<a data-go="${sel.dep}">${DEP[sel.dep].n}</a>`:`<b>${DEP[sel.dep].n}</b>`);
+  if(sel.mun)crumb.push('›',`<b>${MUN[sel.mun].n}</b>`);
+  $('crumb').innerHTML='<span class="lbl" style="margin-right:4px">Zona</span>'+crumb.join(' ');
+  $('crumb').querySelectorAll('a').forEach(a=>a.onclick=()=>applySel(+a.dataset.go||null,null));
+  const rk=sel.mun?`#${o.rk} de ${D.mun.length} municipios · #${o.rkd} de ${o.nd} en ${DEP[o.dep].n}`:sel.dep?`#${o.rk} de ${D.dep.length} departamentos`:'promedio nacional';
+  $('kpis').innerHTML=[
+    ['Inundación alta o muy alta',fmt(o.flood)+'%','del territorio'],
+    ['Amenaza volcánica alta',fmt(o.volc)+'%','del territorio'],
+    ['Focos de calor',fmt(o.fire,2)+'<small>/km²·año</small>',`${fmt(o.fires,0)} focos en 2020–2025`],
+    sel.dep?['Índice compuesto',`${o.idx}<small>/100</small>`,rk]:['Superficie',fmt(o.km2,0)+'<small>km²</small>','22 departamentos'],
+  ].map(k=>`<div class="kpi"><span class="lbl">${k[0]}</span><span class="v">${k[1]}</span><span class="s">${k[2]}</span></div>`).join('');
+}
+
+// Calificación
+function pip(pt,poly){let ins=false;for(const ring of poly){for(let i=0,j=ring.length-1;i<ring.length;j=i++){const[xi,yi]=ring[i],[xj,yj]=ring[j];if(((yi>pt[1])!=(yj>pt[1]))&&(pt[0]<(xj-xi)*(pt[1]-yi)/(yj-yi)+xi))ins=!ins;}}return ins;}
+function idAt(G,ll){for(const [id,f] of Object.entries(G)){const g=f.geometry;const ps=g.type==='Polygon'?[g.coordinates]:g.coordinates;if(ps.some(p=>pip([ll.lng,ll.lat],p)))return +id;}return null;}
+const decode=c=>({f:Math.floor(c/25),v:Math.floor((c%25)/5),fi:c%5});
+const hav=(a,b)=>{const t=Math.PI/180,dl=(b[0]-a[0])*t,dn=(b[1]-a[1])*t;const h=Math.sin(dl/2)**2+Math.cos(a[0]*t)*Math.cos(b[0]*t)*Math.sin(dn/2)**2;return 12742*Math.asin(Math.sqrt(h));};
+async function evaluate(ll){
+  let src=null;
+  for(const key of [sel.dep,'pais'].filter(Boolean)){
+    const s=await source(key),p=map.project(ll,s.g.Z),x=Math.floor(p.x-s.g.px0),y=Math.floor(p.y-s.g.py0);
+    if(x>=0&&y>=0&&x<s.g.W&&y<s.g.H&&s.q.getImageData(x,y,1,1).data[0]!==255){src={s,x,y};break;}
+  }
+  if(!src)return null;
+  const {s,x,y}=src,g=s.g,k=decode(s.q.getImageData(x,y,1,1).data[0]);
+  const ed=s.e.getImageData(Math.min(s.e.canvas.width-1,x>>1),Math.min(s.e.canvas.height-1,y>>1),1,1).data,el=(ed[0]*256+ed[1])*2;
+  const R=Math.ceil(2000/g.mpp),x1=Math.max(0,x-R),y1=Math.max(0,y-R),w=Math.min(g.W,x+R+1)-x1,h=Math.min(g.H,y+R+1)-y1;
+  const a=s.q.getImageData(x1,y1,w,h).data,near={f:Infinity,v:Infinity,fi:Infinity},nb={f:0,v:0,fi:0};
+  for(let j=0;j<h;j++)for(let i=0;i<w;i++){const c=a[(j*w+i)*4];if(c===255)continue;const kk=decode(c),d=Math.hypot(x1+i-x,y1+j-y)*g.mpp;
+    for(const z of['f','v','fi']){if(kk[z]>=3&&d<near[z])near[z]=d;if(d<=g.mpp*1.6&&kk[z]>nb[z])nb[z]=kk[z];}}
+  const hs=z=>Math.min(100,k[z]*25+(nb[z]>k[z]?12.5:0)),sc={f:hs('f'),v:hs('v'),fi:hs('fi')};
+  const arr=[sc.f,sc.v,sc.fi*.5].sort((a,b)=>b-a),score=Math.round(Math.min(100,arr[0]+.25*(arr[1]+arr[2])));
+  const vs=S.volcanoes.filter(v=>v.t!=='C').map(v=>[v.n,hav([ll.lat,ll.lng],[v.lat,v.lon])]).sort((a,b)=>a[1]-b[1]);
+  const dom=[['inundación',sc.f],['amenaza volcánica',sc.v],['quemas',sc.fi*.5]].sort((a,b)=>b[1]-a[1])[0][0];
+  const mun=idAt(GM,ll),dep=idAt(GD,ll);
+  return{lat:ll.lat,lng:ll.lng,k,sc,score,g:grade(score),near,el,vs,dom,mpp:g.mpp,mun:mun&&MUN[mun]?MUN[mun].n:'',dep:dep?DEP[dep].n:''};
+}
+const fmtD=(d,mpp)=>d===Infinity?'> 2 km':d<mpp*.6?'en el punto':d<1000?`${Math.round(d/10)*10} m`:`${fmt(d/1000,1)} km`;
+const gmaps=(la,lo)=>`https://www.google.com/maps/search/?api=1&query=${la.toFixed(6)},${lo.toFixed(6)}`;
+const pin=L.marker([0,0],{icon:L.divIcon({className:'',html:'<svg width="26" height="36" viewBox="0 0 26 36"><path d="M13 35C13 35 25 20 25 12.5A12 12 0 0 0 1 12.5C1 20 13 35 13 35Z" fill="#101820" stroke="#fff" stroke-width="1.5"/><circle cx="13" cy="12.5" r="4.5" fill="#fff"/></svg>',iconSize:[26,36],iconAnchor:[13,35]}),draggable:true,pane:'vec',title:'Punto evaluado',zIndexOffset:1000});
+pin.on('dragend',()=>rate(pin.getLatLng(),false));
+let last=null;
+async function rate(ll,pan=true){
+  const box=$('probe');box.innerHTML='<div class="hint" style="padding-top:6px">Calculando…</div>';
+  pin.setLatLng(ll).addTo(map);if(pan)map.setView(ll,Math.max(map.getZoom(),12));
+  $('qin').value=`${ll.lat.toFixed(6)}, ${ll.lng.toFixed(6)}`;
+  const links=`<a class="btn" href="${gmaps(ll.lat,ll.lng)}" target="_blank" rel="noopener">Google Maps ↗</a><button type="button" class="btn ghost" id="cp">Copiar</button>`;
+  const r=await evaluate(ll);last=r;
+  if(!r){box.innerHTML=`<div class="hint" style="padding-top:8px">El punto está fuera de Guatemala o sobre un lago o el mar.</div><div class="acts">${links}</div>`;bindCopy(ll);return;}
+  const hz=(name,z,col,extra)=>`<div class="hz"><span>${name}</span><span class="pill c${r.k[z]}">${LV[r.k[z]]}</span><span class="track"><i style="width:${Math.max(3,r.sc[z])}%;background:${col}"></i></span><small>${extra}</small></div>`;
+  box.innerHTML=`<div class="grade"><span class="g" style="background:${r.g[3]}">${r.g[1]}</span><span class="gl">Riesgo ${r.g[2].toLowerCase()} <span class="num" style="font-weight:400;color:var(--mute)">· ${r.score}/100</span></span><span class="gs">${[r.mun,r.dep].filter(Boolean).join(', ')} · ${r.el.toLocaleString('es-GT')} m</span></div>`+
+    hz('Inundación','f','var(--mid)',`Zona alta más cercana: ${fmtD(r.near.f,r.mpp)}`)+
+    hz('Volcánica','v','var(--brick)',`Zona alta más cercana: ${fmtD(r.near.v,r.mpp)} · ${r.vs.slice(0,2).map(v=>`${v[0]} ${fmt(v[1],v[1]<100?1:0)} km`).join(' · ')}`)+
+    hz('Incendios / quemas','fi','var(--ochre)',`Zona alta más cercana: ${fmtD(r.near.fi,r.mpp)}`)+
+    `<div class="hint" style="padding-top:6px">${r.score<20?'Sin amenaza relevante en el modelo.':`Factor principal: ${r.dom}.`} <span class="res">Resolución ${Math.round(r.mpp)} m.</span></div>`+
+    `<div class="acts"><button type="button" class="btn" id="addPt">+ Agregar al informe</button>${links}</div>`;
+  bindCopy(ll);$('addPt').onclick=()=>{addPoint(r);$('addPt').textContent='Agregado';$('addPt').disabled=true;};
+}
+function bindCopy(ll){const b=$('cp');if(!b)return;b.onclick=()=>{const t=`${ll.lat.toFixed(6)}, ${ll.lng.toFixed(6)}`,selq=()=>{$('qin').focus();$('qin').select();};
+  try{navigator.clipboard.writeText(t).then(()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar',1400);},selq);}catch(e){selq();}};}
+function parseCoords(s){
+  s=s.trim();let m=s.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)||s.match(/[?&](?:q|query|ll)=(-?\d+\.?\d*),\s*(-?\d+\.?\d*)/)||s.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/);
+  if(m)return[+m[1],+m[2]];
+  const dms=[...s.matchAll(/(\d+)[°º]\s*(\d+)?['′]?\s*([\d.]+)?["″]?\s*([NSEWOnseow])/g)];
+  if(dms.length===2)return dms.map(d=>{let v=+d[1]+(+d[2]||0)/60+(+d[3]||0)/3600;if(/[SWOswo]/.test(d[4]))v=-v;return v;});
+  const n=s.match(/-?\d+(?:\.\d+)?/g);
+  if(n&&n.length>=2){let a=+n[0],b=+n[1];if(Math.abs(a)>Math.abs(b))[a,b]=[b,a];if(b>80)b=-b;return[a,b];}
+  return null;
+}
+$('qform').addEventListener('submit',e=>{e.preventDefault();const c=parseCoords($('qin').value);
+  if(!c||Math.abs(c[0])>90||Math.abs(c[1])>180){$('probe').innerHTML='<div class="err">No reconocí las coordenadas. Usa latitud, longitud en decimales (14.6349, -90.5069) o pega un enlace de Google Maps.</div>';return;}
+  rate(L.latLng(c[0],c[1]));});
+map.on('click',e=>rate(e.latlng,false));
+
+// Puntos guardados
+let pts=[];const ptLayer=L.layerGroup().addTo(map);
+try{pts=JSON.parse(localStorage.getItem('atlas-gt-pts')||'[]');}catch(e){pts=[];}
+function savePts(){try{localStorage.setItem('atlas-gt-pts',JSON.stringify(pts));}catch(e){}}
+function addPoint(r){pts.push({lat:r.lat,lng:r.lng,score:r.score,gl:r.g[1],k:r.k,mun:r.mun,dep:r.dep,el:r.el,dom:r.dom,near:r.near,mpp:r.mpp,vs:r.vs.slice(0,1)});savePts();drawPts();}
+function drawPts(){
+  ptLayer.clearLayers();
+  pts.forEach((p,i)=>L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:`<div class="pnum">${i+1}</div>`,iconSize:[20,20],iconAnchor:[10,10]}),pane:'vec'}).on('click',()=>rate(L.latLng(p.lat,p.lng),false)).addTo(ptLayer));
+  $('saved').innerHTML=pts.length?pts.map((p,i)=>`<div class="it"><span class="n">${i+1}</span><span class="gg" style="background:${grade(p.score)[3]}">${p.gl}</span><span>${p.mun||p.dep} · <span class="num">${p.lat.toFixed(4)}, ${p.lng.toFixed(4)}</span></span><button type="button" data-i="${i}" aria-label="Quitar punto ${i+1}">×</button></div>`).join('')
+    :'<div class="hint">Califica un punto y usa “Agregar al informe” para comparar varios terrenos.</div>';
+  $('saved').querySelectorAll('button').forEach(b=>b.onclick=()=>{pts.splice(+b.dataset.i,1);savePts();drawPts();});
+}
+drawPts();
+
+// Tabla
+let tableLevel='dep',sortK='idx',sortD=-1;
+const COLS={dep:[['n','Departamento'],['idx','Índice'],['flood','Inund. alta %'],['volc','Volc. alta %'],['fire','Focos/km²·año'],['km2','km²']],
+            mun:[['n','Municipio'],['d','Departamento'],['idx','Índice'],['flood','Inund. alta %'],['volc','Volc. alta %'],['fire','Focos/km²·año']]};
+function drawTable(){
+  const mx=MX[tableLevel],cols=COLS[tableLevel],flt=$('tfilter').value.trim().toLowerCase();
+  document.querySelector('#tbl thead tr').innerHTML=cols.map(([k,l])=>`<th data-k="${k}"${k===sortK?` aria-sort="${sortD<0?'descending':'ascending'}"`:''}${k==='n'||k==='d'?' style="text-align:left"':''}>${l}</th>`).join('');
+  let rows=[...D[tableLevel]];
+  if(tableLevel==='mun'&&sel.dep&&!flt)rows=rows.filter(r=>r.dep===sel.dep);
+  if(flt)rows=rows.filter(r=>r.n.toLowerCase().includes(flt)||(r.d||'').toLowerCase().includes(flt));
+  rows.sort((a,b)=>(typeof a[sortK]==='string'?a[sortK].localeCompare(b[sortK],'es'):a[sortK]-b[sortK])*sortD);
+  const cell={n:r=>`<td>${r.n}</td>`,d:r=>`<td class="sub">${r.d}</td>`,idx:r=>`<td><span class="idx" style="background:${idxColor(r.idx)}">${r.idx}</span></td>`,
+    flood:r=>`<td>${fmt(r.flood)}<span class="bar" style="width:${r.flood/mx.flood*40}px"></span></td>`,
+    volc:r=>`<td>${fmt(r.volc)}<span class="bar" style="width:${r.volc/mx.volc*40}px;background:var(--brick)"></span></td>`,
+    fire:r=>`<td>${fmt(r.fire,2)}<span class="bar" style="width:${r.fire/mx.fire*40}px;background:var(--ochre)"></span></td>`,
+    km2:r=>`<td>${r.km2.toLocaleString('es-GT')}</td>`};
+  const cur=tableLevel==='dep'?sel.dep:sel.mun;
+  document.querySelector('#tbl tbody').innerHTML=rows.map(r=>`<tr data-id="${r.id}"${r.id===cur?' class="sel"':''}>${cols.map(([k])=>cell[k](r)).join('')}</tr>`).join('');
+  document.querySelectorAll('#tbl th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(sortK===k)sortD*=-1;else{sortK=k;sortD=(k==='n'||k==='d')?1:-1;}drawTable();});
+}
+function setLevel(l){tableLevel=l;$('t-dep').setAttribute('aria-pressed',l==='dep');$('t-mun').setAttribute('aria-pressed',l==='mun');if(!COLS[l].some(c=>c[0]===sortK)){sortK='idx';sortD=-1;}drawTable();}
+$('t-dep').onclick=()=>setLevel('dep');$('t-mun').onclick=()=>setLevel('mun');$('tfilter').addEventListener('input',drawTable);
+document.querySelector('#tbl tbody').addEventListener('click',e=>{const tr=e.target.closest('tr');if(!tr)return;const id=+tr.dataset.id;
+  if(tableLevel==='dep')applySel(id,null);else applySel(MUN[id].dep,id);$('map').scrollIntoView({behavior:'smooth',block:'center'});});
+
+// Estacionalidad
+(()=>{const m=S.months,svg=$('months'),W=420,H=210,l=40,r=8,t=14,b=26,step=m.some(v=>v>8000)?5000:1000;
+  const max=Math.ceil(Math.max(...m)/step)*step,bw=(W-l-r)/12,names=['E','F','M','A','M','J','J','A','S','O','N','D'],top3=[...m].sort((a,b)=>b-a)[2];let s='';const ff='IBM Plex Sans Condensed,Arial Narrow,sans-serif';
+  for(let v=0;v<=max;v+=step){const y=H-b-(v/max)*(H-t-b);s+=`<line x1="${l}" x2="${W-r}" y1="${y}" y2="${y}" stroke="var(--rule)"/><text x="${l-6}" y="${y+3.5}" text-anchor="end" font-size="10" fill="var(--mute)" font-family="${ff}">${v.toLocaleString('es-GT')}</text>`;}
+  m.forEach((v,i)=>{const h=(v/max)*(H-t-b),x=l+i*bw+3,hi=v>=top3;
+    s+=`<rect x="${x}" y="${H-b-h}" width="${bw-6}" height="${h}" fill="${hi?'var(--brick)':'var(--ochre)'}" opacity="${hi?1:.7}"/><text x="${x+(bw-6)/2}" y="${H-b+15}" text-anchor="middle" font-size="11" fill="var(--slate)" font-family="${ff}">${names[i]}</text>`;
+    if(hi)s+=`<text x="${x+(bw-6)/2}" y="${H-b-h-4}" text-anchor="middle" font-size="10" fill="var(--ink)" font-family="${ff}">${v.toLocaleString('es-GT')}</text>`;});
+  s+=`<line x1="${l}" x2="${W-r}" y1="${H-b}" y2="${H-b}" stroke="var(--ink)" stroke-width="1.2"/>`;svg.innerHTML=s;
+  const tot=m.reduce((a,c)=>a+c,0),am=m[3]+m[4],wet=m.slice(5,10).reduce((a,c)=>a+c,0);
+  $('fire-note').textContent=`${tot.toLocaleString('es-GT')} focos en seis años. Abril y mayo concentran ${Math.round(am/tot*100)}%: final de la estación seca, preparación de tierras y propagación de incendios forestales en Petén y las Verapaces. De junio a octubre ocurre apenas ${Math.round(wet/tot*100)}%. En la costa sur el pico es de diciembre a marzo, con la zafra.`;
+})();
+
+// ---------- Informe ----------
+const HC={f:['#B9D0E2','#78A5C8','#3E6B8C','#1B3A5C'],v:['#D6BE8C','#C49646','#AA5A32','#78261C'],i:['#ECD6A0','#DEAA5A','#C8732D','#963719']};
+async function figure(kind,f,bbox,grid,dir){
+  // bbox en coordenadas de píxel de la malla; dibuja base + capa + contorno + puntos
+  const [base,lay]=await Promise.all([loadImg(`capas/${dir}/base.jpg`),loadImg(`capas/${dir}/${kind}`)]);
+  const sw=base.width/grid.W;
+  const [x0,y0,x1,y1]=bbox,w=x1-x0,h=y1-y0,scale=Math.min(640/w,640/h,4),cw=Math.round(w*scale),ch=Math.round(h*scale);
+  const c=document.createElement('canvas');c.width=cw*2;c.height=ch*2;const x=c.getContext('2d');x.scale(2,2);x.imageSmoothingEnabled=true;
+  x.drawImage(base,x0*sw,y0*sw,w*sw,h*sw,0,0,cw,ch);x.imageSmoothingEnabled=false;x.drawImage(lay,x0,y0,w,h,0,0,cw,ch);
+  const toP=([lo,la])=>{const p=map.project(L.latLng(la,lo),grid.Z);return[(p.x-grid.px0-x0)*scale,(p.y-grid.py0-y0)*scale];};
+  if(f){const g=f.geometry,polys=g.type==='Polygon'?[g.coordinates]:g.coordinates;
+    x.beginPath();x.rect(0,0,cw,ch);polys.forEach(p=>p.forEach(r=>{r.forEach((pt,i)=>{const[a,b]=toP(pt);i?x.lineTo(a,b):x.moveTo(a,b);});x.closePath();}));
+    x.fillStyle='rgba(243,242,238,.62)';x.fill('evenodd');
+    x.beginPath();polys.forEach(p=>p.forEach(r=>{r.forEach((pt,i)=>{const[a,b]=toP(pt);i?x.lineTo(a,b):x.moveTo(a,b);});x.closePath();}));
+    x.strokeStyle='#8E3B2B';x.lineWidth=2;x.stroke();}
+  pts.forEach((p,i)=>{const[a,b]=toP([p.lng,p.lat]);if(a<0||b<0||a>cw||b>ch)return;x.beginPath();x.arc(a,b,8,0,7);x.fillStyle='#101820';x.fill();x.strokeStyle='#fff';x.lineWidth=1.5;x.stroke();
+    x.fillStyle='#fff';x.font='700 10px "IBM Plex Sans Condensed",Arial,sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText(i+1,a,b+.5);});
+  // escala gráfica
+  const kmPx=1000/grid.mpp*scale;let km=[1,2,5,10,20,50,100].find(k=>k*kmPx>60)||100;const L_=km*kmPx;
+  x.fillStyle='rgba(255,255,255,.85)';x.fillRect(8,ch-26,L_+16,18);x.fillStyle='#101820';x.fillRect(16,ch-14,L_,3);
+  x.font='600 10px "IBM Plex Sans Condensed",Arial,sans-serif';x.textAlign='left';x.textBaseline='alphabetic';x.fillText(`${km} km`,16,ch-17);
+  return c;
+}
+function bboxOf(f,grid,pad=.06){
+  const g=f.geometry,polys=g.type==='Polygon'?[g.coordinates]:g.coordinates;let a=[1e9,1e9,-1e9,-1e9];
+  polys.forEach(p=>p[0].forEach(([lo,la])=>{const q=map.project(L.latLng(la,lo),grid.Z);const X=q.x-grid.px0,Y=q.y-grid.py0;a=[Math.min(a[0],X),Math.min(a[1],Y),Math.max(a[2],X),Math.max(a[3],Y)];}));
+  const pw=(a[2]-a[0])*pad+4,ph=(a[3]-a[1])*pad+4;
+  return[Math.max(0,Math.floor(a[0]-pw)),Math.max(0,Math.floor(a[1]-ph)),Math.min(grid.W,Math.ceil(a[2]+pw)),Math.min(grid.H,Math.ceil(a[3]+ph))];
+}
+function distRows(o){
+  const row=(name,arr,col)=>{const none=Math.max(0,100-arr.reduce((a,b)=>a+b,0));
+    return`<div class="row"><span>${name}</span><span class="bar2">${arr.map((v,i)=>`<i style="width:${v}%;background:${col[i]}" title="${LV[i+1]}: ${fmt(v)}%"></i>`).join('')}</span><span class="num">${fmt(arr[2]+arr[3])}% alta o muy alta</span></div>`;};
+  return row('Inundación',o.df,HC.f)+row('Volcánica',o.dv,HC.v)+row('Incendios / quemas',o.di,HC.i)+
+    `<div class="lg"><span><i style="background:#ccc"></i>Baja → Muy alta (tono más oscuro = mayor)</span><span>El resto del área no tiene clase</span></div>`;
+}
+let repText='';
+async function buildReport(){
+  if(!sel.dep){$('btnRep').textContent='Elige un departamento';setTimeout(()=>$('btnRep').textContent='Generar informe',1800);$('selDep').focus();return;}
+  $('btnRep').textContent='Generando…';
+  const d=DEP[sel.dep],o=scopeObj(),f=sel.mun?GM[sel.mun]:GD[sel.dep],grid=d.grid,bb=bboxOf(f,grid);
+  const place=sel.mun?`${o.n}, ${d.n}`:`Departamento de ${d.n}`;
+  const peers=D.mun.filter(m=>m.dep===sel.dep).sort((a,b)=>b.idx-a.idx);
+  const within=pts.filter(p=>{const id=idAt(sel.mun?{[sel.mun]:GM[sel.mun]}:{[sel.dep]:GD[sel.dep]},L.latLng(p.lat,p.lng));return !!id;});
+  const main=[['inundación',o.flood],['amenaza volcánica',o.volc]].sort((a,b)=>b[1]-a[1]);
+  const fireRel=o.fire/NAT.fire;
+  const today=new Date().toLocaleDateString('es-GT',{day:'numeric',month:'long',year:'numeric'});
+  const findings=[
+    o.flood>=10?`<b>Inundación relevante.</b> ${fmt(o.flood)}% del territorio está en clase alta o muy alta, por encima del promedio nacional (${fmt(NAT.flood)}%). Las zonas críticas siguen los cauces principales y, si hay costa, la franja bajo 6 m.`:
+      o.flood>=3?`<b>Inundación localizada.</b> ${fmt(o.flood)}% del territorio en clase alta o muy alta (país: ${fmt(NAT.flood)}%). Se concentra en vegas de ríos; el terreno fuera de ellas queda en clase baja o sin clase.`:
+      `<b>Inundación baja.</b> Solo ${fmt(o.flood)}% del territorio en clase alta (país: ${fmt(NAT.flood)}%). La amenaza se limita al lecho de los ríos.`,
+    o.volc>=5?`<b>Amenaza volcánica significativa.</b> ${fmt(o.volc)}% del territorio está en zona alta, por cercanía a conos activos o por corredores de lahar. Volcán activo más cercano al centro de la zona: ${centerVolc(f)}.`:
+      o.volc>0.5?`<b>Amenaza volcánica puntual.</b> ${fmt(o.volc)}% del territorio en zona alta, asociado a cauces de lahar o a flancos de volcanes. Volcán activo más cercano: ${centerVolc(f)}.`:
+      `<b>Sin amenaza volcánica relevante.</b> Volcán activo más cercano: ${centerVolc(f)}.`,
+    `<b>Incendios y quemas.</b> ${fmt(o.fire,2)} focos/km²·año (${fmt(o.fires,0)} en seis años), ${fireRel>=1.5?`${fmt(fireRel,1)} veces el promedio nacional: la vecindad con cultivos que se queman o bosque seco es un factor a revisar en cada terreno.`:fireRel>=.7?'cerca del promedio nacional.':'por debajo del promedio nacional.'}`,
+    `<b>Posición relativa.</b> Índice compuesto ${o.idx}/100. ${sel.mun?`Puesto ${o.rk} de ${D.mun.length} municipios del país y ${o.rkd} de ${o.nd} en ${d.n}.`:`Puesto ${o.rk} de ${D.dep.length} departamentos.`}`,
+  ];
+  const figs=await Promise.all([['inundacion.png','Inundación'],['volcanica.png','Amenaza volcánica'],['incendios.png','Incendios y quemas']].map(async([k,t])=>[t,await figure(k,f,bb,grid,d.s)]));
+  const ptsHtml=within.length?`<table><thead><tr><th>#</th><th>Ubicación</th><th>Nota</th><th>Inund.</th><th>Volc.</th><th>Quemas</th><th>Elev.</th><th style="text-align:left">Abrir</th></tr></thead><tbody>${within.map(p=>{const i=pts.indexOf(p)+1;
+      return`<tr><td>${i}</td><td style="text-align:left">${p.mun||p.dep}<br><span class="note num">${p.lat.toFixed(5)}, ${p.lng.toFixed(5)}</span></td><td><span class="idx" style="background:${grade(p.score)[3]}">${p.gl} · ${p.score}</span></td><td>${LV[p.k.f]}</td><td>${LV[p.k.v]}</td><td>${LV[p.k.fi]}</td><td>${p.el.toLocaleString('es-GT')} m</td><td style="text-align:left"><a href="${gmaps(p.lat,p.lng)}" target="_blank" rel="noopener">Google Maps ↗</a></td></tr>`;}).join('')}</tbody></table>
+      <p class="note">Nota del punto: amenaza dominante (clase × 25) más 25% de las otras dos; sube medio nivel si a ~150 m hay una clase mayor. Factor principal por punto: ${within.map(p=>`${pts.indexOf(p)+1}: ${p.dom}`).join(' · ')}.</p>`
+    :`<p class="note">No hay puntos guardados dentro de esta zona. Califica terrenos en el mapa y usa “Agregar al informe” para incluirlos aquí con su nota y enlace a Google Maps.</p>`;
+  const peerRows=peers.slice(0,12).map(m=>`<tr${m.id===sel.mun?' class="sel"':''}><td>${m.n}</td><td><span class="idx" style="background:${idxColor(m.idx)}">${m.idx}</span></td><td>${fmt(m.flood)}</td><td>${fmt(m.volc)}</td><td>${fmt(m.fire,2)}</td></tr>`).join('');
+  $('sheet').innerHTML=`
+  <div class="rep-head"><div><div class="lbl">Informe de amenazas naturales · ${today}</div><h2>${place}</h2>
+    <div class="crumb" style="margin-top:6px">${fmt(o.km2,0)} km² · elevación mediana ${o.elev.toLocaleString('es-GT')} m · resolución 74 m</div></div>
+    <div class="gbig"><span class="g" style="background:${idxColor(o.idx)}">${o.idx}</span><span class="lbl">Índice compuesto</span><span class="gs" style="font-family:var(--f-cond);font-size:13px;color:var(--slate)">${sel.mun?`#${o.rk} de ${D.mun.length} municipios`:`#${o.rk} de ${D.dep.length} departamentos`}</span></div></div>
+  <section><h3>Resumen</h3><div class="prose">${findings.map(t=>`<p>${t}</p>`).join('')}</div></section>
+  <section><h3>Mapas de la zona</h3><div class="figs" id="figs"></div><p class="note">Contorno en rojo: zona del informe; fuera de ella, atenuado. Círculos numerados: puntos evaluados.</p></section>
+  <section><h3>Distribución del territorio por clase</h3><div class="dist">${distRows(o)}</div></section>
+  <section><h3>Terrenos evaluados</h3>${ptsHtml}</section>
+  <section class="two">
+    <div><h3>${sel.mun?`Municipios de ${d.n}`:'Municipios más expuestos'}</h3><table><thead><tr><th>Municipio</th><th>Índice</th><th>Inund. %</th><th>Volc. %</th><th>Focos/km²</th></tr></thead><tbody>${peerRows}</tbody></table></div>
+    <div><h3>Comparación</h3><table><thead><tr><th></th><th>${sel.mun?o.n:d.n}</th>${sel.mun?`<th>${d.n}</th>`:''}<th>Guatemala</th></tr></thead><tbody>
+      <tr><td>Inundación alta %</td><td>${fmt(o.flood)}</td>${sel.mun?`<td>${fmt(d.flood)}</td>`:''}<td>${fmt(NAT.flood)}</td></tr>
+      <tr><td>Volcánica alta %</td><td>${fmt(o.volc)}</td>${sel.mun?`<td>${fmt(d.volc)}</td>`:''}<td>${fmt(NAT.volc)}</td></tr>
+      <tr><td>Focos/km²·año</td><td>${fmt(o.fire,2)}</td>${sel.mun?`<td>${fmt(d.fire,2)}</td>`:''}<td>${fmt(NAT.fire,2)}</td></tr>
+      <tr><td>Elevación mediana m</td><td>${o.elev.toLocaleString('es-GT')}</td>${sel.mun?`<td>${d.elev.toLocaleString('es-GT')}</td>`:''}<td>—</td></tr></tbody></table></div>
+  </section>
+  <section><h3>Método y alcance</h3><p class="note">Susceptibilidad derivada de un DEM global a 74 m (AWS Terrain Tiles/SRTM): inundación por altura sobre el cauce (HAND) con ríos de cuenca &gt; 40 km², costa bajo 6 m y orillas de lagos; amenaza volcánica por distancia a 13 volcanes y corredores de lahar trazados aguas abajo; incendios por densidad de focos MODIS (NASA FIRMS) 2020–2025. Índice compuesto = 45% inundación + 35% volcánica + 20% focos, normalizado contra la unidad más expuesta del país. No incluye deslizamientos ni sismo. Es un filtro preliminar: no sustituye los mapas oficiales de CONRED, INSIVUMEH y SIG-MAGA ni un estudio topográfico e hidrológico del sitio.</p></section>`;
+  const fg=$('figs');figs.forEach(([t,c])=>{const fi=document.createElement('figure');fi.appendChild(c);const cap=document.createElement('figcaption');cap.textContent=t;fi.appendChild(cap);fg.appendChild(fi);});
+  repText=`Informe de amenazas naturales — ${place} (${today})\nÍndice compuesto: ${o.idx}/100\nInundación alta o muy alta: ${fmt(o.flood)}% · Volcánica alta: ${fmt(o.volc)}% · Focos: ${fmt(o.fire,2)}/km²·año\n`+
+    within.map(p=>`Punto ${pts.indexOf(p)+1}: ${p.gl} (${p.score}/100) · ${p.lat.toFixed(6)}, ${p.lng.toFixed(6)} · ${gmaps(p.lat,p.lng)}`).join('\n')+'\nModelo preliminar; validar con CONRED/INSIVUMEH y estudio de sitio.';
+  $('informe').hidden=false;$('btnRep').textContent='Generar informe';$('informe').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function centerVolc(f){const b=L.geoJSON(f).getBounds().getCenter();const v=S.volcanoes.filter(v=>v.t!=='C').map(v=>[v.n,hav([b.lat,b.lng],[v.lat,v.lon])]).sort((a,b)=>a[1]-b[1])[0];return`${v[0]}, a ${fmt(v[1],v[1]<100?1:0)} km`;}
+$('btnRep').onclick=buildReport;
+$('btnClose').onclick=()=>{$('informe').hidden=true;};
+$('btnCopy').onclick=()=>{const b=$('btnCopy');try{navigator.clipboard.writeText(repText).then(()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar resumen',1400);},()=>{});}catch(e){}};
+if(window.self===window.top){$('btnPrint').hidden=false;$('btnPrint').onclick=()=>window.print();}
+
+// Arranque: zona desde el enlace (#escuintla o #escuintla.m123)
+const h=location.hash.slice(1);
+if(h){const[ds,ms]=h.split('.');const d=D.dep.find(x=>x.s===ds);if(d)applySel(d.id,ms&&MUN[+ms.slice(1)]?+ms.slice(1):null,{hash:false});else applySel(null,null,{hash:false,fit:false});}
+else applySel(null,null,{hash:false,fit:false});
+})();
+</script>
+
+</body></html>
